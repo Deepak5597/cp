@@ -1,0 +1,18 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+body img {
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-origin: center;
+}/*# sourceMappingURL=style.css.map */
