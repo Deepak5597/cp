@@ -1,18 +1,113 @@
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'cairo', 'Courier New', Courier, monospace;
 }
 
-body {
-  background-color: black;
-  height: 100vh;
-  display: grid;
-  place-items: center;
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color:black;
+    height:60px;
+    padding: 0rem 5rem;
 }
-body img {
-  background-size: cover;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-origin: center;
-}/*# sourceMappingURL=style.css.map */
+
+.logo{
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.logo > span {
+    color: #6b62ff;
+}
+
+.header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav ul li{
+    list-style-type: none;
+    padding:0 20px;
+    cursor: pointer;
+
+}
+.header nav ul li:hover{
+    color:#6b62ff;
+
+}
+.activity a{
+    background-color: white;
+    outline: none;
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.login{
+    background-color: black;
+    color:white;
+    padding:0.2rem 1.8rem;
+    transition: "background-color" 0.2s ease-in;
+}
+
+a.login:hover{
+    cursor: pointer;
+    background-color: #6b62ff;
+}
+
+.hero-section{
+    height: calc(100vh - 60px);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5rem;
+}
+
+.hero-section .hero-content p{
+    font-size:1rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    line-height: 2em;
+}
+
+.hero-section .hero-content a{
+    background-color: black;
+    color:white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+.hero-section .hero-content a:hover{
+    cursor: pointer;
+    background-color: #6b62ff;
+}
+
+.hero-section .hero-content h4{
+    font-size:2rem;
+    letter-spacing: 1px;
+}
+
+.hero-section .hero-content {
+    flex: 1;
+}
+
+.cta-image{
+    flex:1;;
+}
+
+.cta-image img{
+    height: 400px;
+    width:400px;
+    float: right;
+}
+.c-letter{
+    color:#6b62ff;
+}
